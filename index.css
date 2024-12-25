@@ -167,3 +167,21 @@
     color : white;
     }
 }
+.ordernow{
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    background-color: #14dc1e;
+    border: 3px solid #047c28;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    animation: effect1 2s alternate infinite ease-in;
+}
+@keyframes effect1 {
+    5%{transform:rotate(5deg)}
+    25%{transform:rotate(10deg)}
+    50%{transform:rotate(-10deg)}
+    10%{transform:rotate(-5deg)}
+}
