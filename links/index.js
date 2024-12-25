@@ -37,12 +37,14 @@ let view1 = document.getElementsByClassName("menu5")[0];
 let menuview = document.querySelector(".main ul");
 function close1(){
     if(flag){
-        view1.innerHTML = "close" ;
+        view1.innerHTML = "X" ;
         menuview.style.display = "block";
+        view1.style.backgroundColor = "red";
         flag = false;
     }else {
         view1.innerHTML = "menu" ;
         menuview.style.display = "none";
+        view1.style.backgroundColor = "blue";
         flag = true;
     }
 }
