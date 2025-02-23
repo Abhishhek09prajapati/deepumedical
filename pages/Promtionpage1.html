@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepu Medical</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .main{
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f9fa;
+        text-align: center;
+    }
+    .main >h1{
+        /* background-color: rgb(255, 255, 255); */
+        animation: all 3s  infinite;
+        font-size: 32px;
+        position: fixed;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 20px;
+        
+        
+    }
+    @keyframes all{
+        0%{
+            font-size: 25px;
+        }
+        25%{
+            font-size: 22px;
+        }
+        50%{
+            font-size: 27px;
+        }
+        100%{
+            font-size: 32px;
+        }
+    }
+    #followus{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid black;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        margin-top: 20px;
+    }
+    #followus img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    .followdiiv{
+        position: sticky;
+        bottom: 0px;
+        top: 100%;
+    }
+    @media screen and (max-width: 600px){
+        
+    }
+</style>
+<body>
+    <div class="main">
+        <h1>Deepu Medical</h1><br><br>
+        <p>Sector Q,aliganj</p>
+        <br>
+        <b>Contact us</b>
+        <p>Phone: <a style="text-decoration: none;color:darkblue" href="https://wa.me/9184678225278">84678225278</a></p>
+        <div style="width: 100%; ">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZxZy7qM9vUqdfKNDF_y1oq7MuG1ieBBniWUw0c3q-xddgtw/viewform?embedded=true" width="100%"  height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <div class="followdiiv"">
+            <h1>Follow us</h1>
+            <div id="followus">
+                <img src="/imagess/facebook.png" alt="">
+                <img src="/imagess/instagra.png" alt="">
+                <img src="/imagess/telegram (1).png" alt="">
+                <img src="/imagess/whatsapp.png" alt="">
+                <img src="/imagess/youtube (1).png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
