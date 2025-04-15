@@ -3,12 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
-.main1{
-    background-image: linear-gradient(rgb(253, 232, 232),white, rgb(212, 249, 212));
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
-}
+
 .main2{
     width: 500px;
     height: 100vh;
