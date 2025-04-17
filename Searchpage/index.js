@@ -2,7 +2,7 @@ var customerNumber = document.getElementById('searchnumber');
 var ul = document.getElementById('items1');
 let result = [];
 function searchItmes(){
-    fetch('https://api.npoint.io/b292a2b7acd4874c5f09')
+    fetch('customerdata.json')
     .then(data=>data.json())
     .then(data=>{
         if(customerNumber.value != '' ){
@@ -23,5 +23,6 @@ function searchItmes(){
             console.log("please inter");
         }
     })
+    .catch(error => console.error('Error loading JSON:', error));
     
 }
