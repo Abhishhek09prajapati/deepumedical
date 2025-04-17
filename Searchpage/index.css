@@ -5,13 +5,13 @@
 }
 
 .main2{
-    width: 100%;
-    height: 100vh;
+    width: min-content;
+    height: max-content;
     border: 1px solid green;
-    margin: 0px;
+    margin: auto;
     background-color: rgb(236, 254, 248);
     text-align: center;
-    padding: 5px;
+    padding: 20px;
 }
 .main2 button{
       background-color: #4CAF50; /* Green */
@@ -22,6 +22,7 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      margin: 20px;
 
 }
 .main2 input{
