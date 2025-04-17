@@ -43,3 +43,16 @@
       transition: background-color 0.3s ease;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+#previousprofile{
+      width: max-content;
+      height: min-content;
+      border: 1px solid black;
+      margin: auto;
+      margin-top: 20px;
+      display: none;
+      padding: 10px;
+      background-color: rgb(203, 200, 200);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: red;
+
+  }

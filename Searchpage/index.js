@@ -1,7 +1,6 @@
 var customerNumber = document.getElementById('searchnumber');
 var ul = document.getElementById('items1');
 var btnUserClick = document.getElementById('btnUserClick');
-var userprofile = document.getElementById('form1');
 var previousprofile = document.getElementById('previousprofile');
 let result = [];
 let User = [];
@@ -35,7 +34,8 @@ function searchItmes(){
 }
 
 function userdata(){
-    alert(User);
     btnUserClick.disabled  = true ;
-    btnUserClick.style.background = "grey"
+    btnUserClick.style.background = "grey";
+    previousprofile.style.display="block";
+    previousprofile.innerHTML = User;
 }
