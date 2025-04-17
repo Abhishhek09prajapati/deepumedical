@@ -1,15 +1,23 @@
 var customerNumber = document.getElementById('searchnumber');
 var ul = document.getElementById('items1');
+var btnUserClick = document.getElementById('btnUserClick');
+var userprofile = document.getElementById('form1');
+var previousprofile = document.getElementById('previousprofile');
 let result = [];
+let User = [];
+let result2 = [];
 function searchItmes(){
+    btnUserClick.disabled  = false ;
+    btnUserClick.style.background = "green";
     fetch('customerdata.json')
     .then(data=>data.json())
     .then(data=>{
         if(customerNumber.value != '' ){
             for(var i=0;i<data.length;i++){
+
                 if(data[i].number == customerNumber.value || data[i].name == customerNumber.value){
-                    result.push(...data[i].medicine);  
-    
+                    User.push(data[i].name);
+                    result.push(...data[i].medicine);
                     for( var j=0;j<result.length;j++){
                         var li = document.createElement('li');
                         li.innerHTML = result[j];
@@ -20,9 +28,14 @@ function searchItmes(){
                 } 
             }
         }else{
-            console.log("please inter");
+            alert("Please Enter Customer Number");
         }
     })
-    .catch(error => console.error('Error loading JSON:', error));
-    
+    .catch(error => console.error('Error loading JSON:', error));  
+}
+
+function userdata(){
+    alert(User);
+    btnUserClick.disabled  = true ;
+    btnUserClick.style.background = "grey"
 }
