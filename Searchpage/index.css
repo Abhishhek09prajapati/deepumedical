@@ -11,7 +11,7 @@
     margin: auto;
     background-color: rgb(236, 254, 248);
     text-align: center;
-    padding: 20px;
+    padding: 20px 25px;
 }
 .main2 button{
       background-color: #4CAF50; /* Green */
@@ -54,5 +54,4 @@
       background-color: rgb(203, 200, 200);
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color: red;
-
-  }
+}
