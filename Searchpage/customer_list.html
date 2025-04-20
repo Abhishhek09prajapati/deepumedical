@@ -17,7 +17,7 @@
     .then(res=>res.json())
     .then(res=>{
         var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
-        numberofcustomer.style.width="100%";
+        // numberofcustomer.style.width="100%";
         numberofcustomer.innerHTML = `Customer of Number = ${res.length}`
         res.map((res1,i,k)=>{
             let cardDiv = document.createElement('div');
