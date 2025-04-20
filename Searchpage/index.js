@@ -5,6 +5,15 @@ var previousprofile = document.getElementById('previousprofile');
 let result = [];
 let User = [];
 let result2 = [];
+
+function userdata1(){
+    btnUserClick.disabled  = true ;
+    btnUserClick.style.background = "grey";
+    previousprofile.style.display="block";
+    previousprofile.innerHTML = User;
+}
+
+
 function searchItmes(){
     btnUserClick.disabled  = false ;
     btnUserClick.style.background = "green";
@@ -33,9 +42,3 @@ function searchItmes(){
     .catch(error => console.error('Error loading JSON:', error));  
 }
 
-function userdata(){
-    btnUserClick.disabled  = true ;
-    btnUserClick.style.background = "grey";
-    previousprofile.style.display="block";
-    previousprofile.innerHTML = User;
-}
