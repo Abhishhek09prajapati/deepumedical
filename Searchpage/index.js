@@ -8,7 +8,7 @@ let result2 = [];
 function searchItmes(){
     btnUserClick.disabled  = false ;
     btnUserClick.style.background = "green";
-    fetch('customerdata.json')
+    fetch('/Searchpage/customerdata.json')
     .then(data=>data.json())
     .then(data=>{
         if(customerNumber.value != '' ){
@@ -34,8 +34,8 @@ function searchItmes(){
 }
 
 function userdata(){
-    // btnUserClick.disabled  = true ;
-    // btnUserClick.style.background = "grey";
+    btnUserClick.disabled  = true ;
+    btnUserClick.style.background = "grey";
     previousprofile.style.display="block";
     previousprofile.innerHTML = User;
 }
