@@ -21,7 +21,14 @@
         numberofcustomer.innerHTML = `Customer of Number = ${res.length}`
         res.map((res1,i,k)=>{
             let cardDiv = document.createElement('div');
-            cardDiv.classList = "card1";
+            cardDiv.style.width = "100%";
+            cardDiv.style.height  ="20px";
+            cardDiv.style.border  =  "1px solid rgb(235, 4, 4)";
+            cardDiv.style.textAlign  =  "center";
+             cardDiv.style.margin  =" 5px";
+             cardDiv.style.padding  = "20px";
+
+
             cardDiv.innerHTML = `${res[i].name} / (${res[i].number}) /${res[i].medicine}`
             customerCard.append(cardDiv)
         }
@@ -30,4 +37,6 @@
         .catch(err=>console.log(err));
 
 </script>
-</html>
+</html>: 100%;
+    
+    
