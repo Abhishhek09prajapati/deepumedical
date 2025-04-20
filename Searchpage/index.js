@@ -42,6 +42,10 @@ function userdata1(){
     previousprofile.style.display="block";
     previousprofile.innerHTML = User;
 }
+function show1(){
+    customerCard.style.display = "block";
+}
+
 
 fetch('customerdata.json')   
 .then(data=>data.json())
