@@ -44,10 +44,7 @@ function userdata1(){
 }
 function show1(){
     customerCard.style.display = "block";
-}
-
-
-fetch('customerdata.json')   
+    fetch('customerdata.json')   
 .then(data=>data.json())
     .then(data=>{
         var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
@@ -61,5 +58,9 @@ fetch('customerdata.json')
         }
             
         )} )
-        .catch(err=>console.log(err));
+        .catch(err=>console.log(err))
+}
+
+
+
 
