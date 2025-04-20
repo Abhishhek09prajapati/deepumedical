@@ -2,9 +2,31 @@ var customerNumber = document.getElementById('searchnumber');
 var ul = document.getElementById('items1');
 var btnUserClick = document.getElementById('btnUserClick');
 var previousprofile = document.getElementById('previousprofile');
+var customerCard = document.getElementsByClassName('customer_list')[0];
 let result = [];
 let User = [];
 let result2 = [];
+let customerInfo = [];
+
+fetch('/Searchpage/customerdata.json')
+    .then(data=>data.json())
+    .then(data=>{
+        data.map((data1,i,k)=>{
+
+            
+            let cardDiv = document.createElement('div');
+            cardDiv.className = "card1";
+            cardDiv.innerHTML = `${data[i].name} / (${data[i].number}) /${data[i].medicine}`
+            customerCard.append(cardDiv)
+        }
+            
+        )
+    }
+        
+    
+    ).catch(err=>console.log(err))
+
+
 function searchItmes(){
     btnUserClick.disabled  = false ;
     btnUserClick.style.background = "green";
