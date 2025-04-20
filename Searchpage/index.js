@@ -7,31 +7,10 @@ let result = [];
 let User = [];
 let result2 = [];
 let customerInfo = [];
-
-fetch('/Searchpage/customerdata.json')
-    .then(data=>data.json())
-    .then(data=>{
-        var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
-        numberofcustomer.style.width="100%";
-        numberofcustomer.innerHTML = `Customer of Number = ${data.length}`
-        data.map((data1,i,k)=>{
-            let cardDiv = document.createElement('div');
-            cardDiv.className = "card1";
-            cardDiv.innerHTML = `${data[i].name} / (${data[i].number}) /${data[i].medicine}`
-            customerCard.append(cardDiv)
-        }
-            
-        )
-    }
-        
-    
-    ).catch(err=>console.log(err))
-
-
 function searchItmes(){
     btnUserClick.disabled  = false ;
     btnUserClick.style.background = "green";
-    fetch('/Searchpage/customerdata.json')
+    fetch('customerdata.json')
     .then(data=>data.json())
     .then(data=>{
         if(customerNumber.value != '' ){
@@ -63,4 +42,20 @@ function userdata1(){
     previousprofile.style.display="block";
     previousprofile.innerHTML = User;
 }
+
+fetch('customerdata.json')   
+.then(data=>data.json())
+    .then(data=>{
+        var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
+        numberofcustomer.style.width="100%";
+        numberofcustomer.innerHTML = `Customer of Number = ${data.length}`
+        data.map((data1,i,k)=>{
+            let cardDiv = document.createElement('div');
+            cardDiv.className = "card1";
+            cardDiv.innerHTML = `${data[i].name} / (${data[i].number}) /${data[i].medicine}`
+            customerCard.append(cardDiv)
+        }
+            
+        )} )
+        .catch(err=>console.log(err));
 
