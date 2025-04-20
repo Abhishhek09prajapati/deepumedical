@@ -11,9 +11,10 @@ let customerInfo = [];
 fetch('/Searchpage/customerdata.json')
     .then(data=>data.json())
     .then(data=>{
+        var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
+        numberofcustomer.style.width="100%";
+        numberofcustomer.innerHTML = `Customer of Number = ${data.length}`
         data.map((data1,i,k)=>{
-
-            
             let cardDiv = document.createElement('div');
             cardDiv.className = "card1";
             cardDiv.innerHTML = `${data[i].name} / (${data[i].number}) /${data[i].medicine}`
