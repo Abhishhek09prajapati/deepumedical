@@ -48,6 +48,7 @@
       height: min-content;
       border: 1px solid black;
       margin: auto;
+      margin-top: 20px;
       display: none;
       padding: 10px;
       background-color: rgb(203, 200, 200);
@@ -61,8 +62,6 @@
       overflow: auto;
       margin: auto;
       margin-top: 20px;
-      display: none;
-      
 }
 .card1{
       width: 100%;

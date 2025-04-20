@@ -2,7 +2,7 @@ var customerNumber = document.getElementById('searchnumber');
 var ul = document.getElementById('items1');
 var btnUserClick = document.getElementById('btnUserClick');
 var previousprofile = document.getElementById('previousprofile');
-var customerCard = document.getElementsByClassName('customer_list')[0];
+
 let result = [];
 let User = [];
 let result2 = [];
@@ -10,7 +10,7 @@ let customerInfo = [];
 function searchItmes(){
     btnUserClick.disabled  = false ;
     btnUserClick.style.background = "green";
-    fetch('customerdata.json')
+    fetch('/Searchpage/customerdata.json')
     .then(data=>data.json())
     .then(data=>{
         if(customerNumber.value != '' ){
@@ -42,25 +42,3 @@ function userdata1(){
     previousprofile.style.display="block";
     previousprofile.innerHTML = User;
 }
-function show1(){
-    customerCard.style.display = "block";
-    fetch('customerdata.json')   
-    .then(res=>res.json())
-    .then(res=>{
-        var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
-        numberofcustomer.style.width="100%";
-        numberofcustomer.innerHTML = `Customer of Number = ${res.length}`
-        res.map((res1,i,k)=>{
-            let cardDiv = document.createElement('div');
-            cardDiv.className = "card1";
-            cardDiv.innerHTML = `${res[i].name} / (${res[i].number}) /${res[i].medicine}`
-            customerCard.append(cardDiv)
-        }
-            
-        )} )
-        .catch(err=>console.log(err))
-}
-
-
-
-
