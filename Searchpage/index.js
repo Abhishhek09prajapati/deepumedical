@@ -45,15 +45,15 @@ function userdata1(){
 function show1(){
     customerCard.style.display = "block";
     fetch('customerdata.json')   
-.then(data=>data.json())
-    .then(data=>{
+    .then(res=>res.json())
+    .then(res=>{
         var numberofcustomer = document.getElementsByClassName('numberofcustomer')[0];
         numberofcustomer.style.width="100%";
-        numberofcustomer.innerHTML = `Customer of Number = ${data.length}`
-        data.map((data1,i,k)=>{
+        numberofcustomer.innerHTML = `Customer of Number = ${res.length}`
+        res.map((res1,i,k)=>{
             let cardDiv = document.createElement('div');
             cardDiv.className = "card1";
-            cardDiv.innerHTML = `${data[i].name} / (${data[i].number}) /${data[i].medicine}`
+            cardDiv.innerHTML = `${res[i].name} / (${res[i].number}) /${res[i].medicine}`
             customerCard.append(cardDiv)
         }
             
