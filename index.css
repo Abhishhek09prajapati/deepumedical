@@ -3,13 +3,45 @@
     padding: 0px;
     box-sizing: border-box;
 }
-body{
-    font-family: Arial, sans-serif;
-    background-color: #01dbf3;
+.staffcard{
+    width: max-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: max-content;
-    box-sizing: border-box;
-    
-    height: min-content;
+    border: 1px dotted black;
+    padding:  20px;
+    text-align: center;
+    animation: move1 3s alternate infinite;
+    z-index: 1;
+    background-image: linear-gradient(red,yellow);
+}
+@keyframes move1 {
+    0%   { transform: scale(1) skewX(0deg) skewY(0deg)}
+    25%  { transform: scale(1.01) skewX(1deg) skewY(-10deg);box-shadow: inset 10px 10px 10px;}
+    50%  { transform: scale(0.99) skewX(-1.5deg) skewY(15deg) ;box-shadow: 10px 10px 10px; }
+    75%  { transform: scale(1.02) skewX(0.5deg) skewY(-15deg);;box-shadow: inset 10px 10px 10px;}
+    100% { transform: scale(1) skewX(0deg) skewY(10deg) ;box-shadow: 10px 10px 10px; }
+  }
+
+
+.staffcard img{
+    width: 100px;
+    margin: 10px;
+    box-shadow: 5px 7px 5px;
+}
+.staffcard button{
+    background-color: #4CAF50;        /* Green background */
+    color: white;                     /* White text */
+    border: none;                     /* No border */
+    padding: 12px 24px;               /* Padding inside button */
+    font-size: 16px;                  /* Font size */
+    border-radius: 8px;               /* Rounded corners */
+    cursor: pointer;    
+    margin: 10px;              /* Pointer on hover */  
+}
+body{
+    font-family: Arial, sans-serif;  
 }
 .total1{
     width: 100%;
@@ -20,13 +52,14 @@ main{
     height: min-content;
 }
 nav{
-    background-color: #333;
+    background-color: #000000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     color: white;
     justify-content: space-evenly;
     text-align: center;
+    z-index: 2;
 }
 nav h1{
     width: max-content;
@@ -65,7 +98,7 @@ nav ul li a:hover{
 .main2{
     width: 100%;
     height: max-content;
-    
+    text-align: center;
     box-sizing: border-box;
     padding: 2% 20%;
 }
@@ -77,20 +110,34 @@ nav ul li a:hover{
     text-align: center;
 }
 .contact2 button{
-        padding: 30px;
+        padding: 10px;
         border-radius: 20px;
         background-image: linear-gradient(rgb(178, 255, 178),rgb(69, 243, 11),rgb(236, 248, 236));
         color: white;
-        font-size: 50px;
+        font-size: 20px;
         border: 0px;
         box-shadow: 5px 2px 1px green;
         margin: 5px;
 }
+.main2 img{
+    width: 400px ;
+    
+}
+#btnitems{
+        background-color: #8bf18e;
+         padding: 10px;
+        border-radius: 20px;
+        border: 2px solid black;
+        color: rgb(255, 1, 1);
+        font-size: 20px;
+        border: 0px;
+        box-shadow: 5px 2px 1px green;
+        margin: auto;
+}
 .contact2 button:active{
-    padding: 25px;
+    padding: 10px;
     box-shadow: 5px 2px 10px rgb(255, 251, 4);
 }
-
 @media (max-width: 568px) {
     #ul1{
         display: none;

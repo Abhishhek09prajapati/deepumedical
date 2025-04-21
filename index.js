@@ -16,3 +16,58 @@ close2.addEventListener("click",function(){
         list1.style.display = "none";
     }
 });
+
+
+var staffimage = document.getElementById('staffimage');
+var staffName = document.getElementById('staffName');
+var staffNumber = document.getElementById('staffNumber');
+var staff_flag = 0;
+
+var staff = [
+    {
+        "name":"Abhishek Prajapati",
+        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1731750006/Wildlife_at_Maasai_Mara__28Lion_29_bzlak9.jpg",
+        "number" : "3554"
+    },
+    {
+        "name":"Jay Nishad",
+        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1723699904/casino%20image/3917eb2d355278350eafd08a6279a3b6_dcr0m1.jpg",
+        "number" : "275"
+    },
+    {
+        "name":"Rahul Gutam",
+        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1721714984/casino%20image/Instagram_logo_2022_oftxk3.svg",
+        "number" : "6387215752755"
+    },
+    {
+        "name":"Aman Shukla",
+        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1731750006/Wildlife_at_Maasai_Mara__28Lion_29_bzlak9.jpg",
+        "number" : "638721725755"
+    },
+]
+
+
+setInterval(function staff_view(){
+    if(staff_flag==0){
+        staffimage.src = staff[0].img;
+        staffName.innerHTML = staff[0].name;
+        staffNumber.innerHTML = staff[0].number;
+        staff_flag=1;
+    }else if(staff_flag==1){
+        staffimage.src = staff[1].img;
+        staffName.innerHTML = staff[1].name;
+        staffNumber.innerHTML = staff[1].number;
+        staff_flag=2;
+    }else if(staff_flag==2){
+        staffimage.src = staff[2].img;
+        staffName.innerHTML = staff[2].name;
+        staffNumber.innerHTML = staff[2].number;
+        staff_flag=3;
+    }else if(staff_flag==3){
+        staffimage.src = staff[3].img;
+        staffName.innerHTML = staff[3].name;
+        staffNumber.innerHTML = staff[3].number;
+        staff_flag=0;
+    }
+    
+},3000)
