@@ -22,30 +22,13 @@ var staffimage = document.getElementById('staffimage');
 var staffName = document.getElementById('staffName');
 var staffNumber = document.getElementById('staffNumber');
 var staff_flag = 0;
+let staff = []
 
-var staff = [
-    {
-        "name":"Abhishek Prajapati",
-        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1731750006/Wildlife_at_Maasai_Mara__28Lion_29_bzlak9.jpg",
-        "number" : "3554"
-    },
-    {
-        "name":"Jay Nishad",
-        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1723699904/casino%20image/3917eb2d355278350eafd08a6279a3b6_dcr0m1.jpg",
-        "number" : "275"
-    },
-    {
-        "name":"Rahul Gutam",
-        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1721714984/casino%20image/Instagram_logo_2022_oftxk3.svg",
-        "number" : "6387215752755"
-    },
-    {
-        "name":"Aman Shukla",
-        "img":"https://res.cloudinary.com/dqwsepgzc/image/upload/v1731750006/Wildlife_at_Maasai_Mara__28Lion_29_bzlak9.jpg",
-        "number" : "638721725755"
-    },
-]
-
+fetch('https://api.npoint.io/e7da991ff5944fca563b')
+.then(res=>res.json())
+.then(data =>{
+    staff.push(...data)
+})
 
 setInterval(function staff_view(){
     if(staff_flag==0){

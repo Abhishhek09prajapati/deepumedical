@@ -13,7 +13,7 @@
     padding:  20px;
     text-align: center;
     animation: move1 3s alternate infinite;
-    z-index: 1;
+    z-index: -1;
     background-image: linear-gradient(red,yellow);
 }
 @keyframes move1 {
@@ -59,18 +59,20 @@ nav{
     color: white;
     justify-content: space-evenly;
     text-align: center;
-    z-index: 2;
+    z-index: 2000;
 }
 nav h1{
     width: max-content;
-    height: max-content;
+    height: max-content;  
 }
 nav ul {
     display: flex;
+    z-index: 2000;
 }
 nav ul li a{
     color: white;
     text-decoration: none;
+    
 }
 nav ul li{
     margin-right: 20px;
