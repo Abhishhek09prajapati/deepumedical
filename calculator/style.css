@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 500px;
+    height: min-content;
+    border: 1px solid #000;
+    margin:auto;
+    background-color: rgb(255, 255, 255);
+
+}
+.main label{
+    display: block;
+    margin: 5px;
+    font-size: large;
+    text-align: center;
+}
+.main input {
+    display: block;
+    width: 80%;              
+    margin: 10px auto;       
+    padding: 8px;
+    color: rgb(1, 0, 0);            
+    border: none;
+    border-radius: 4px;
+}
+
+.main button{
+    display: block;              
+    margin: 10px auto;       
+    padding: 8px;
+    color: rgb(247, 246, 246);            
+    border: none;
+    border-radius: 4px;
+    background-color: blue;
+}
