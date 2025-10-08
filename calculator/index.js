@@ -43,7 +43,7 @@ document.getElementById('Add-items').addEventListener('click',()=>{
     const tableitems = additmes.value.trim();
 
     if(!tablemrp||!tablediscount||!tableitems){
-         outputanswer.innerHTML = "Don't empty any box";
+        outputanswer.innerHTML = "Don't empty any box";
         return;
     }
     const table = document.getElementById('itmesofmedicine').querySelector('tbody');
