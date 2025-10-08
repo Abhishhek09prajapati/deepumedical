@@ -40,7 +40,7 @@
     height: 500px;
     border: 1px solid black;
     margin: auto;
-    background-image: radial-gradient(rgb(243, 169, 169),white);
+    
 }
 table{
     width: 100%;
@@ -48,10 +48,8 @@ table{
     border: 1px solid black;
 }
 #itmesofmedicine thead tr{
-    background-color: rgb(104, 80, 245);
-}
-#itmesofmedicine tbody tr{
-    background-color: rgb(241, 92, 92);
+    background-color: blue;
+    
 }
 table tr td,th{
    padding: 5px;
@@ -65,7 +63,7 @@ table tr td,th{
     height: max-content;
     padding: 10px;
     border: 1px solid black;
-    background-image: linear-gradient(red,rgb(236, 252, 236));
+    background-image: linear-gradient(red,rgb(236, 252, 236),green);
     text-align: center;
 }
 .additmes{
