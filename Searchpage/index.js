@@ -8,7 +8,7 @@ let User = [];
 let result2 = [];
 let customerInfo = [];
 function searchItmes(){
-    btnUserClick.disabled  = false ;
+    btnUserClick.disabled  = true ;
     btnUserClick.style.background = "green";
     fetch('/Searchpage/customerdata.json')
     .then(data=>data.json())
