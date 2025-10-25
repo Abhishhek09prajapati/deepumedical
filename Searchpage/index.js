@@ -11,11 +11,6 @@ function searchItmes(){
     User = []; // Clear the user list on each search
 
     // Optional: Add a check to prevent unnecessary fetching/processing on an empty input
-    if (customerNumber.value.trim() === '') {
-        btnUserClick.disabled = true;
-        btnUserClick.style.background = "grey";
-        return; // Stop the function if the input is empty
-    }
     
     // Disable button before the search starts
     btnUserClick.disabled = true;
