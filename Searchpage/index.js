@@ -12,7 +12,6 @@ function searchItmes(){
 
     // Optional: Add a check to prevent unnecessary fetching/processing on an empty input
     if (customerNumber.value.trim() === '') {
-        alert("Please Enter Customer Number or Name");
         btnUserClick.disabled = true;
         btnUserClick.style.background = "grey";
         return; // Stop the function if the input is empty
