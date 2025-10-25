@@ -16,7 +16,7 @@ function searchItmes(){
     btnUserClick.disabled = true;
     btnUserClick.style.background = "grey";
 
-    fetch('/Searchpage/customerdata.json')
+    fetch('customerdata.json')
     .then(data => data.json())
     .then(data => {
         let found = false;
