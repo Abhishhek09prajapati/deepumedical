@@ -1,0 +1,30 @@
+[
+    {
+        "number":"6387215755",
+        "name":"Abhishek Prajapati",
+        "medicine":["combiflame","dozox drop"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8948464510",
+        "name":"Suraj Prajapati",
+        "medicine":["free recharge","dozox drop"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8467822578",
+        "name":"Jai nisad",
+        "medicine":["google pay","dozox drop"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"7054278840",
+        "name":"Ankkit Prajapati",
+        "medicine":["paytm","dozox drop"],
+        "Address" : "lucknow",
+        "images":"" 
+    }
+]

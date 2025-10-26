@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(247, 240, 240);
+}
+
+#customernumber {
+    width: 320px;
+    margin-bottom: 20px;
+    color: rgb(5, 3, 3);
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+
+}
+
+#btn {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user {
+    color: red;
+}
+
+.userhistory {
+  left: 12px;
+  top: 12px;
+  color: rgba(15, 0, 0, 0.7);
+  pointer-events: none;
+  transition: 0.3s ease all;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.userhistory li {
+    border: 0.5px solid black;
+    padding: 5px 10px
+}
