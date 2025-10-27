@@ -7,6 +7,33 @@
         "images":""
     },
     {
+        "number":"6307722350",
+        "name":"Mask Man",
+        "medicine":["Whitcare"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9807950375",
+        "name":"Mask Man",
+        "medicine":["Polybion Active Syrup"],
+        "Address" : "lucknow",
+        "images":""
+    },{
+        "number":"7905375814",
+        "name":"Mask Man",
+        "medicine":["Fach Mask"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9454886803",
+        "name":"Mask Man",
+        "medicine":["Moistane eye drop"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
         "number":"9125937014",
         "name":"Suraj Prajapati",
         "medicine":["Loyzide M 80","Sitaron 50mg","Pioz 7.5mg","Rabezox 20mg"],
@@ -26,5 +53,166 @@
         "medicine":["paytm","dozox drop"],
         "Address" : "lucknow",
         "images":"" 
+    },
+    {
+        "number":"9794779870",
+        "name":"Mask Man",
+        "medicine":["Lakshdi Gulgul"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9695086899",
+        "name":"Mask Man",
+        "medicine":["Seacod"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8738964399",
+        "name":"Mask Man",
+        "medicine":["Doxy LB"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9569402451",
+        "name":"Mask Man",
+        "medicine":["Enerzol Powder"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9889614720",
+        "name":"Mask Man",
+        "medicine":["Dialex PC Syrupm"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9044471449",
+        "name":"Mask Man",
+        "medicine":["SGLTD Trio 1000"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9598074290",
+        "name":"Mask Man",
+        "medicine":["Glunase"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9452463720",
+        "name":"Mask Man",
+        "medicine":["Metosartan ln 2.5mg"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9044206030",
+        "name":"Mask Man",
+        "medicine":["Sabistya Gulgul"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8374878422",
+        "name":"Mask Man",
+        "medicine":["Nezoline Syrup"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9335737059",
+        "name":"Mask Man",
+        "medicine":["Corex T Syrup"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"7800885611",
+        "name":"Mask Man",
+        "medicine":["BioFung eye drop"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9129773449",
+        "name":"Mask Man",
+        "medicine":["Accuhek 50 Strip"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9125725546",
+        "name":"Mask Man",
+        "medicine":["Akurit 4 tab"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8419898587",
+        "name":"Mask Man",
+        "medicine":["Benadon"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"941586631",
+        "name":"Mask Man",
+        "medicine":["Combutol 800mg","R-cinex 600"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8318252184",
+        "name":"Mask Man",
+        "medicine":["Imegly 1000","Kayam Tabel","liv 52 DS"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9125167964",
+        "name":"Mask Man",
+        "medicine":["levolin r/c","Foracort Forte r/c"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"7880459708",
+        "name":"Mask Man",
+        "medicine":["Pantop DSR","Udiliv 300"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8840536854",
+        "name":"Mask Man",
+        "medicine":["Hair 4U lotion"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"8081745596",
+        "name":"Mask Man",
+        "medicine":["Duolin R/c"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9569268033",
+        "name":"Mask Man",
+        "medicine":["Aten 25"],
+        "Address" : "lucknow",
+        "images":""
+    },
+    {
+        "number":"9794191387",
+        "name":"Mask Man",
+        "medicine":["Lupizyme"],
+        "Address" : "lucknow",
+        "images":""
     }
 ]
