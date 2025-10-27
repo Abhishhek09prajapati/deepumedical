@@ -15,6 +15,7 @@ function userdeatiles() {
     fetch('data.json')
         .then(res => res.json())
         .then(data => {
+            
             // Reset previous data
             user = '';
             usernumber = '';
@@ -24,16 +25,17 @@ function userdeatiles() {
             // Try to find user by number
             const foundUser = data.find(item => customernumber.value == item.number);
 
-            if (foundUser) {
+            if (foundUser && customernumber.value != "") {
                 user = foundUser.name;
                 usernumber = foundUser.number;
                 usermedicine = foundUser.medicine;
                 userAddress1 = foundUser.Address;
                 customerdiv.style.display = "block";
+        
     
             } else {
                 alert("Customer not found!");
-                customerdiv.style.display = "none";
+                
             }
         })
         .catch(err => {
