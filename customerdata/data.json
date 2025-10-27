@@ -214,5 +214,12 @@
         "medicine":["Lupizyme"],
         "Address" : "lucknow",
         "images":""
+    },
+    {
+        "number":"6387215755",
+        "name":"Mask Man",
+        "medicine":["okay tab"],
+        "Address" : "lucknow",
+        "images":""
     }
 ]
