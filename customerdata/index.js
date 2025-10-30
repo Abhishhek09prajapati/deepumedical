@@ -98,13 +98,4 @@ function renderCustomerMobiles() {
     });
 }
 
-customermobile1(); // Call the function to start fetching data
-
-// The original second loop is REMOVED/REPLACED by the renderCustomerMobiles call inside customermobile1
-// for(let i=0;i<=customermbile.length;i++){
-//     var li = document.createElement('li');
-//     li.innerHTML = customermbile[i]
-//     customerphone.appendChild(li)
-// }
-
-console.log(customermbile); // Note: This will still likely log an empty array initially due to asynchronous fetch.
+customermobile1();
