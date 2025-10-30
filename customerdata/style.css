@@ -53,3 +53,11 @@ body {
 .customerdiv1{
     display: none;
 }
+.numberlist{ 
+    background-color: #4f46e5;
+    position: absolute;
+    top:0;
+    left: -200px;
+    transition: all 3s;
+    
+}

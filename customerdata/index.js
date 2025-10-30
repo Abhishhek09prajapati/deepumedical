@@ -6,6 +6,7 @@ var userhistory = document.getElementsByClassName('userhistory')[0];
 var customerdiv = document.getElementsByClassName("customerdiv")[0];
 var customerdivname = document.getElementsByClassName("customerdiv1")[0];
 var customerphone = document.getElementById('customermobile2');
+var numberlist = document.getElementsByClassName('numberlist')[0];
 var user = '';
 var usernumber = "";
 var usermedicine = [];
@@ -60,6 +61,23 @@ function customerprofile() {
     });
 
 }
+var flag =1
+function allmobile(){
+    if(flag){
+        numberlist.style.display = "block"
+        numberlist.style.left = "0"
+        flag=0
+    }else{
+        numberlist.style.left = "-200"
+        numberlist.style.display = "none"
+        flag=1
+    }
+    
+}
+
+
+
+
 
 function customermobile1(){
     fetch('data.json')
@@ -98,4 +116,13 @@ function renderCustomerMobiles() {
     });
 }
 
-customermobile1();
+customermobile1(); // Call the function to start fetching data
+
+// The original second loop is REMOVED/REPLACED by the renderCustomerMobiles call inside customermobile1
+// for(let i=0;i<=customermbile.length;i++){
+//     var li = document.createElement('li');
+//     li.innerHTML = customermbile[i]
+//     customerphone.appendChild(li)
+// }
+
+console.log(customermbile); // Note: This will still likely log an empty array initially due to asynchronous fetch.
