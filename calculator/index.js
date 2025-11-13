@@ -10,11 +10,31 @@ function addTable() {
         alert("Please Inter All Value")
         return
     }
+    var date = new Date();
 
+  // Format date and time
+  var day = date.getDate();
+  var month = date.getMonth() + 1; // Months start from 0
+  var year = date.getFullYear();
+
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var seconds = date.getSeconds();
+
+  // Add leading zero if needed
+  if (day < 10) day = "0" + day;
+  if (month < 10) month = "0" + month;
+  if (hours < 10) hours = "0" + hours;
+  if (minutes < 10) minutes = "0" + minutes;
+  if (seconds < 10) seconds = "0" + seconds;
+
+  // Display formatted date and time
+  document.getElementById("date1").innerText = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
     var rate = mrp-mrp*discount/100 ;
     var total = rate*qty ;
     result += total ;
     document.getElementById('result').innerHTML = "Total Amount "+result ;
+    
     const tablebody = document.getElementById('dataTable').querySelector('tbody');
     const newRow = tablebody.insertRow();
 
